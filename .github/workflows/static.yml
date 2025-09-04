@@ -31,10 +31,12 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-           path: './01 Netflix Clone'
+          # Upload your "01 Netflix Clone" folder
+          path: './01 Netflix Clone'
 
       - name: Deploy to GitHub Pages
         id: deployment
+        uses: actions/deploy-pages@v4        id: deployment
         uses: actions/deploy-pages@v4        uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
